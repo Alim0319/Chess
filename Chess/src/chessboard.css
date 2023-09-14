@@ -1,0 +1,18 @@
+.chessboard {
+  background-color: blue;
+}
+
+/* Modify square colors */
+.square {
+  background-color: #f61616;
+  /* Add other square styles as needed */
+}
+
+/* Customize piece styles */
+.piece {
+  /* Add your custom piece styles here */
+  align-items: center;
+}
+.card {
+  background-color: lightblue;
+}

@@ -15,6 +15,7 @@ import { Chess } from "chess.js";
 import CustomDialog from "./components/CustomDialog";
 import socket from "./socket";
 import PropTypes from "prop-types";
+import "./chessboard.css";
 
 function Game({ players, room, orientation, cleanup }) {
   const chess = useMemo(() => new Chess(), []); // <- 1
@@ -106,7 +107,7 @@ function Game({ players, room, orientation, cleanup }) {
   // Game component returned jsx
   return (
     <Stack>
-      <Card>
+      <Card className="card">
         <CardContent>
           <Typography variant="h5">Room ID: {room}</Typography>
         </CardContent>
@@ -115,8 +116,8 @@ function Game({ players, room, orientation, cleanup }) {
         <div
           className="board"
           style={{
-            maxWidth: 600,
-            maxHeight: 600,
+            maxWidth: 750,
+            maxHeight: 750,
             flexGrow: 1,
           }}
         >
