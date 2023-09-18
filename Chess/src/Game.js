@@ -108,9 +108,11 @@ function Game({ players, room, orientation, cleanup }) {
   return (
     <Stack>
       <Card className="card">
-        <CardContent>
-          <Typography variant="h5">Room ID: {room}</Typography>
-        </CardContent>
+        <div className="sidebar">
+          <CardContent>
+            <Typography variant="h5">Room ID: {room}</Typography>
+          </CardContent>
+        </div>
       </Card>
       <Stack flexDirection="row" sx={{ pt: 2 }}>
         <div

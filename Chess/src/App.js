@@ -11,7 +11,6 @@ export default function App() {
 
 import { Container } from "@mui/material";
 import Game from "./Game";
-import "./chessboard.css";
 
 export default function App() {
   // Define or obtain the necessary props here

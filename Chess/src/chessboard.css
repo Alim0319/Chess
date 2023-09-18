@@ -1,18 +1,35 @@
-.chessboard {
-  background-color: blue;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-/* Modify square colors */
-.square {
-  background-color: #f61616;
-  /* Add other square styles as needed */
+.body {
+  background-color: aqua;
 }
-
-/* Customize piece styles */
-.piece {
-  /* Add your custom piece styles here */
+.board {
+  max-width: 750px;
+  max-height: 750px;
   align-items: center;
+  justify-content: center;
+  background-color: black;
 }
 .card {
-  background-color: lightblue;
+  width: 230px;
+  height: 45px; /* Adjust the width as needed */
+  background-color: orange; /* Sidebar background color */
+  color: orange;
+  align-items: center;
+  justify-content: center;
+}
+
+.chessboard-container {
+  flex-grow: 1;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.chessboard-container.open {
+  width: calc(100% - 250px); /* Adjust for sidebar width */
+  padding: 20px;
+  opacity: 1;
+  visibility: visible;
 }
