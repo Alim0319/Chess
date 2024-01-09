@@ -38,10 +38,11 @@ export default function CustomDialog({
     </Dialog>
   );
 }
+
 CustomDialog.propTypes = {
-  open: PropTypes.bool.isRequired, // Validate that 'open' is a boolean and is required
-  children: PropTypes.node, // You can specify other prop types here
-  title: PropTypes.string,
-  contentText: PropTypes.string,
+  open: PropTypes.bool.isRequired,
+  children: PropTypes.node,
+  title: PropTypes.node,
+  contentText: PropTypes.node,
   handleContinue: PropTypes.func,
 };

@@ -15,7 +15,6 @@ import { Chess } from "chess.js";
 import CustomDialog from "./components/CustomDialog";
 import socket from "./socket";
 import PropTypes from "prop-types";
-import "./chessboard.css";
 
 function Game({ players, room, orientation, cleanup }) {
   const chess = useMemo(() => new Chess(), []); // <- 1
@@ -107,12 +106,10 @@ function Game({ players, room, orientation, cleanup }) {
   // Game component returned jsx
   return (
     <Stack>
-      <Card className="card">
-        <div className="sidebar">
-          <CardContent>
-            <Typography variant="h5">Room ID: {room}</Typography>
-          </CardContent>
-        </div>
+      <Card>
+        <CardContent>
+          <Typography variant="h5">Room ID: {room}</Typography>
+        </CardContent>
       </Card>
       <Stack flexDirection="row" sx={{ pt: 2 }}>
         <div
@@ -154,12 +151,11 @@ function Game({ players, room, orientation, cleanup }) {
     </Stack>
   );
 }
-
 Game.propTypes = {
-  players: PropTypes.array.isRequired, // Validate that 'players' is an array and is required
-  room: PropTypes.string.isRequired, // Validate that 'room' is a string and is required
-  orientation: PropTypes.string.isRequired, // Validate that 'orientation' is a string and is required
-  cleanup: PropTypes.func.isRequired, // Validate that 'cleanup' is a function and is required
+  players: PropTypes.array.isRequired,
+  room: PropTypes.string.isRequired,
+  orientation: PropTypes.string.isRequired,
+  cleanup: PropTypes.func.isRequired,
 };
 
 export default Game;

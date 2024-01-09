@@ -77,7 +77,7 @@ export default function InitGame({ setRoom, setOrientation, setPlayers }) {
   );
 }
 InitGame.propTypes = {
-  setRoom: PropTypes.func.isRequired, // Validate that 'setRoom' is a function and is required
-  setOrientation: PropTypes.func.isRequired, // Validate that 'setOrientation' is a function and is required
-  setPlayers: PropTypes.func.isRequired, // Validate that 'setPlayers' is a function and is required
+  setRoom: PropTypes.func.isRequired,
+  setOrientation: PropTypes.func.isRequired,
+  setPlayers: PropTypes.func.isRequired,
 };
