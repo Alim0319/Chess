@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -13,8 +13,8 @@
 .card {
   width: 230px;
   height: 45px; /* Adjust the width as needed */
-  background-color: orange; /* Sidebar background color */
-  color: orange;
+/*background-color: orange; /* Sidebar background color */
+/*color: orange;
   align-items: center;
   justify-content: center;
 }
@@ -27,7 +27,7 @@
 
 .chessboard-container.open {
   width: calc(100% - 250px); /* Adjust for sidebar width */
-  padding: 20px;
+/*padding: 20px;
   opacity: 1;
   visibility: visible;
-}
+}*/
